@@ -10,14 +10,23 @@
 </head>
 <body>
     <div class="container-fluid"><br>
-        <h1 class=" text-center">Upload an Image to get Cigared</h1>
+        <h1 class=" text-center">Upload an Image</h1>
         <form class="text-center" action="/action_page.php">
             <label class="btn btn-primary" for="img">
                 <input type="file" name="img" accept="image/*">
             </label>
           </form>
 <br>
-<div class="showMe" style="justify-content: center;"><img id="myImg0" src=""  class="img-fluid d-block mx-auto"></div>
+<div class="row">
+
+    <div class="offset-sm-2 col-sm-4">
+        <div class="showMe" style="justify-content: center;"><img id="myImg" src="" style="max-height: 300px;" class="img-fluid d-block mx-auto"></div>
+    </div>
+    <div class="col-sm-4">
+        <button id="copyButton" class="btn btn-warning">Copy to Clipboard</button>
+    <textarea name="input" id="base" cols="100" rows="30"></textarea>
+    </div>
+</div>
         
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
