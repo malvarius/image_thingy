@@ -8,3 +8,9 @@ h1{
 p{
     color: white;
 }
+#base{
+    max-width: 80%;
+     overflow:scroll;
+     position: absolute;
+     left: 10%;
+}

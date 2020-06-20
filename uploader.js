@@ -1,5 +1,4 @@
-//The image hide is simply to keep the blank image from showing until it is populated in the even listener function
-$(".showMe").hide();
+
 //Function on file load to take the blank image tag and set src to the bubble URl from file upload so you can see the image you are converting
 window.addEventListener('load', function() {
     $('input[type=file]').on('change',function(){
