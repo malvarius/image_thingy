@@ -1,7 +1,5 @@
 //The image hide is simply to keep the blank image from showing until it is populated in the even listener function
-if($('img').attr("src")==="#"){
-    $(this).hide()
-}
+$(".showMe").hide();
 //Function on file load to take the blank image tag and set src to the bubble URl from file upload so you can see the image you are converting
 window.addEventListener('load', function() {
     $('input[type=file]').on('change',function(){
@@ -24,8 +22,10 @@ window.addEventListener('load', function() {
       return "There was an error with your file"
     };
  }
-//Function to allow easier copying by simply clicking the copy button at top of text area
+//Function to allow easier copying by simply clicking the copy button at top of text area, audio file for click sound
+var audio = new Audio('click.wav');
  $("#copyButton").on('click', function(){
+audio.play();
    const value = $("#base").val();
    navigator.clipboard.writeText(value)
 
